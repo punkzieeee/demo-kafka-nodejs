@@ -1,0 +1,24 @@
+{
+  "name": "demo-kafka-nodejs",
+  "version": "1.0.0",
+  "description": "Demo WOW Kafka with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test123\" && exit 0",
+    "server": "node --env-file=.env index.js",
+    "consumer": "node --env-file=.env consumer.js test",
+    "producer": "node --env-file=.env producer.js"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "punkzieeee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "kafkajs": "^2.2.4",
+    "readline": "^1.3.0"
+  }
+}
